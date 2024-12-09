@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(78, 37, 78);
+}
+.griddyCont {
+    display: grid;
+    border: solid pink;
+    gap: 4;
+    text-align: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 200px);
+    grid-template-areas: 
+    "hd hd hd hd"
+    "nb mg mg mg"
+    "nb mg mg mg"
+    "ft ft ft ft";
+}
+.hoofd{
+    grid-area: hd;
+    border: 2px solid pink;
+}
+.navBar{
+    grid-area: nb;
+    border: 2px solid pink;
+}
+.mainGrid{
+   grid-area: mg;
+   border: 2px solid pink;
+}
+.footer{
+    grid-area: ft;
+    border: 2px solid pink;
+}
+.hoofd:hover{
+    background-color: rgb(197, 114, 128);
+}
+.navBar:hover{
+    background-color: rgb(197, 114, 128);
+}
+.mainGrid:hover{
+    background-color: rgb(197, 114, 128);
+}
+.footer:hover{
+    background-color: rgb(197, 114, 128);
+}
